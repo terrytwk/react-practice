@@ -1,0 +1,26 @@
+h2 {
+  color: blue;
+}
+
+.boxmodel {
+  border: 5px solid red;
+  display: inline-block;
+  /* if only one value, applies all four sides */
+  /* if only two values, applies one for top/bottom and another for right/left */
+  /* if four values, applies in order of top, right, bottom, left */
+  padding: 5px 20px;
+  margin: 0px 20px;
+  /* to change content */
+  width: 33px;
+  height: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  /* em is relative to the original size: 2em --> two times the original  */
+  /* rem is relative to the document font-size  */
+  font-size: 2em;
+}

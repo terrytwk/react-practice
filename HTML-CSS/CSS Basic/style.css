@@ -1,0 +1,68 @@
+/* Selector {
+    Property: value;
+} */
+
+/* selecting all elements */
+* {
+  text-align: right;
+}
+body {
+  background-image: url(public/backgroundImage.jpg);
+  background-size: cover;
+}
+
+/* selecting multiple elements */
+/* with space between elements means select p inside h2 */
+/* with > between means select p with parent of h2 (p directly inside h2) */
+/* with + between means select p directly after h2 */
+/* with ":hover" at the end means select when cursor is hovering over the object */
+/* with ":last-child" or ":first-child" at the end means select only the first/last child of the parent */
+/* (not recommended) !import after a value (not the selector) means always apply the property regardless of the order */
+h2,
+p {
+  color: #aa4139;
+  text-align: center;
+  border: 5px solid rgba(255, 176, 170, 0.5);
+  cursor: pointer;
+}
+
+p {
+  color: green;
+  line-height: 25px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 120%;
+  font-family: "Times New Roman", Georgia;
+}
+
+img {
+  float: left;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* using class as a selector */
+.webtext {
+  border: 5px dashed green;
+}
+
+.active {
+  color: red;
+}
+
+/* using id as a selector --> id can only be used once! */
+#div1 {
+  background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+  background: rgba(255, 0, 0, 0.2);
+}
